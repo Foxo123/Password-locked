@@ -12,11 +12,13 @@ void functions::mainscreen() {
 		cout << " and welcome to this useless program" << endl << endl; Sleep(1000);
 		cout << "For roblox oof sound Press 1" << endl; Sleep(200);
 		cout << "For the increasing penis press 2" << endl;
+		cout << "to explode press 3" << endl;
 		Sleep(1000);
 	}
 	else {
 	cout << "For roblox oof sound Press 1" << endl;
 	cout << "For penises press 2" << endl;
+	cout << "to explode press 3" << endl;
 	}
 	cout << endl << "Music: Spring in my step by Silent Partner"; // beetje credits geven naar de muziek
 	SetConsoleTextAttribute(h, FOREGROUND_GREEN | FOREGROUND_INTENSITY);
@@ -33,7 +35,7 @@ void functions::mainscreen() {
 		}
 		else if (GetAsyncKeyState(0x33)) // 3
 		{
-			
+			allahu_Akbar();
 		}
 		Sleep(200);
 	}
@@ -59,6 +61,13 @@ void functions::dick() { // hmmmm?
 				break;
 		}
 		mainscreen();	
+}
+void functions::allahu_Akbar() {
+	clear();
+	cout << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl << "boem boem boem boem boem boem boem boem boem boem boem " << endl;
+	PlaySoundA("boem.wav", NULL, SND_ASYNC | SND_FILENAME);
+	Sleep(2000);
+	mainscreen();
 }
 
 
